@@ -1,0 +1,19 @@
+This is a very trivial harness around qunit which, with a bit of setup
+allows you to use tools built for TAP (the Test Anything Protocol)
+and the Perl testing toolchain to run a QUnit test suite from the unix
+commandline.
+
+To make it go, you'll want to include the "qunit-tap.js" Javascript in your
+QUnit test harness index.html just after you include "qunit.js".
+
+You'll need to take the bin/qunit_harness.pl and tweak it to know where to find your QUnit test suite. 
+
+You'll probably also need to configure how it launches the  harnessed web browser. 
+
+Patches are most certainly welcome.
+
+-Jesse Vincent <jesse@bestpractical.com>
+
+Copyright 2010 Best Practical Solutions, LLC
+
+You may redistribute this software under either the GNU General Public License or Perl's Artistic License (v1).
